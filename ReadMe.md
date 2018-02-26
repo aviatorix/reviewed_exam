@@ -1,26 +1,26 @@
 
-## get fake products
+## get Social Network
 
 ## Installation
 
-    npm install todo_list
+    npm i npm_exam_package
 
 
 ## Usage
 
-For use todo_list
+For npm_exam_package
 
 ```js
-var todo = require('./index.js');
+var social = require('./index.js');
 
-todo.addTodo({idAss:5, description:"Andare a lavorare Domani"});
-todo.getAllTodo();
-todo.deleteTodo(1);
-todo.editTodo(1, 2,true);
-todo.viewTodoStart();
-todo.viewTodoEnd();
-
-// for use editTodo you have to invoke the client function: editTodo(this.client(1),2,true);
-//or example: editTodo(this.client(1),2,false);
+social.sendToSocial("Caio","Sempronio");//sign in in social
+social.insertPost(1,"Hello World");//insert a post
+social.reqSendFriendship(1,2);//send a request of friendship
+//social.reqFriendship(2,1);//receive a request of friendship
+social.removePost(1);//remove a post
+social.removeReqE(1);//remove a request of friendship
+social.acceptFriend(1,2);//accept a request of friendship
+social.viewPostFriend(1,2);//View a post of a friend
+social.usersToken();//View the usersToken
+social.usersRegistered();//View the users already sign in
 ```
-# reviewed_exam
